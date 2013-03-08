@@ -1,5 +1,3 @@
-package com.trelta.commons.utils.controller;
-
 import java.io.IOException;
 import java.net.URL;
 
@@ -12,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.helpers.Loader;
 
-import com.trelta.commons.utils.Constants.Settings;
 
 /**
  * Initializes log4j configuration based on environment properties
