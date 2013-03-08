@@ -11,12 +11,14 @@ runs before anything else in your application.
 
 <p>
 The web.xml file contains the entry needed for configuring the server to execute Log4JInitializer. 
-<br>
- 
+</p>
+
+<p> 
 Log4JInitializer reads an environment variable and uses that to load the environment specific configuration. So name your log4j config files
 like log4j-dev.properties, log4j-prod.properties, log4j-test.properties, log4j-stage.properties 
-<br>
+</p>
 
+<p>
 For Windows set the Environment variable as you would normally do.
 <br>
 For Linux, edit the {CATALINE_HOME}/conf/tomcat7.conf file or the catalina.sh file and add 
@@ -24,7 +26,9 @@ For Linux, edit the {CATALINE_HOME}/conf/tomcat7.conf file or the catalina.sh fi
 <code>
 export MY_ENVIRONEMENT_VARIABLE=prod
 </code>
+</p>
 <br>
+<p>
 And viola, you now have a environment specific log4j!<br>
 Cheers!
 </p>
