@@ -37,7 +37,8 @@ public class Log4jInitializer extends HttpServlet
 	{
 		String env = System.getenv("MY_ENVIRONMENT_VARIABLE");
 		URL log4jConfig = Loader.getResource("log4j-" + env + ".properties");
-		PropertyConfigurator.configureAndWatch(log4jConfig.getFile().substring(1), 60 * 1000);
+		LogManager.resetConfiguration();
+		PropertyConfigurator.configureAndWatch(new File(log4jConfig.getFile()).getAbsolutePath(), 60 * 1000);
 	}
 
 	/**
